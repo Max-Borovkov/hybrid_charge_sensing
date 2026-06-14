@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid_charge_sensing"
+version = "0.1.0"
+description = "Numerical simulations and analysis tools for hybrid charge sensing."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "xarray",
+    "jupyterlab",
+    "ipykernel",
+    "tqdm",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
